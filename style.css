@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-image: url("./fotos/nos.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.namoro {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(0 , 0, 0, 0.5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.yes {
+    font-size: 17px;
+    color: white;
+    border-radius: 20px;
+    background: rgb(186, 78, 122);
+    border: none;
+    padding: 10px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.yes:hover {
+    background: rgb(205, 113, 150);
+}
+
+.no {
+    font-size: 17px;
+    color: white;
+    border-radius: 20px;
+    background: rgb(186, 78, 122);
+    border: none;
+    padding: 10px;
+    width: 80px;
+    cursor: not-allowed;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <div class="container">
+        <div class="namoro">
+            <h1>Quer namorar comigo?</h1>
+            <audio autoplay>
+                <source src="/fotos/CarelessWhisper-GeorgeMichael.mp3" type="audio/mpeg">
+            </audio>
+            <button onclick="yes()" href="#" class="yes">Sim</button>
+            <button onmouseover="desvia(this)" href="#" class="no">Não</button>
+        </div>
+    </div>
+    </body>
+    <script>
+        function yes() {
+            alert("Você aceitou namorar comigo! :)")
+        }
+
+        function desvia(t) {
+            var btn = t;
+            btn.style.position = 'absolute';
+            btn.style.bottom = gerarPosicao(10, 90);
+            btn.style.left = gerarPosicao(10, 90);
+            console.log("opa, deviei.");
+
+            function gerarPosicao(min, max) {
+                return (Math.random() * (max - min) + min) + "%";
+            }
+        }
+    </script>
+
+</html>
